@@ -151,10 +151,6 @@ article
     line-height: 1.4em;
 }
 
-.title
-{
-    padding-right: 0em;
-}
 
 /* SHORTS */
 li {margin-right: 0.3em;}
@@ -172,6 +168,12 @@ li {margin-right: 0.3em;}
         background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
     }
 
+    
+    .title
+    {
+        padding-right: 0em;
+    }
+    
     .title h1
     {
         font-size: 3em;
