@@ -74,7 +74,7 @@ body
     max-width: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .rating p
@@ -173,7 +173,7 @@ li {margin-right: 0.3em;}
     {
         padding-right: 0em;
     }
-    
+
     .title h1
     {
         font-size: 3em;
