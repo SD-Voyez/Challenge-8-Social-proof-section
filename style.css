@@ -31,21 +31,26 @@ body
     background-image: url(./images/bg-pattern-top-desktop.svg), url(./images/bg-pattern-bottom-desktop.svg);
     background-repeat: no-repeat, no-repeat;
     background-position: left 0vh top 0vh, right 0vh bottom 0vh;
-    padding: 5em;
+    padding: 2em;
 }
 
-header
+.container
 {
-    max-width: 1500px;
-    margin: auto;
+    max-width: 1536px;
+}
+
+.top-container
+{
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 .title
 {
     flex: 50%;
     max-width: 500px;
+    padding: 0em 1em 0em 1em;
 }
 
 .title p
@@ -57,16 +62,16 @@ header
     font-weight: 500;
 }
 
-h1
+.title h1
 {
     font-size: 3.5em;
     font-weight: 700;
-    line-height: 0.8em;
 }
 
 .rating
 {
     flex: 50%;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -94,9 +99,10 @@ h1
 
 
 /* DEUXIEME PARTIE */
-main
+.bottom-container
 {
-    max-width: 1500px;
+    max-width: 1000px;
+    min-height: 250px;
     margin-top: 3em;
     display: flex;
     flex-flow: row wrap;
@@ -107,22 +113,42 @@ main
 article
 {
     background-color: hsl(300, 43%, 22%);
-    padding: 1em 2em 1em 2em;
+    padding: 2em;
     border-radius: 0.5em;
-    max-width: 25%;
+    max-width: 32%;
+    min-width: 200px;
+    min-height: 200px;
 }
 
-main img
+.bottom-container img
 {
     border-radius: 50%;
     max-width: 40px;
     display: block;
-    margin-right: 5px;
+    margin-right: 20px;
+}
+
+.comments
+{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.name
+{
+    flex-direction: column;
 }
 
 .verified
 {
     color: hsl(333, 80%, 67%);
+}
+
+.review-text
+{
+    margin-top: 1em;
+    line-height: 1.4em;
 }
 
 /* SHORTS */
@@ -134,14 +160,14 @@ li {margin-right: 0.3em;}
 
 
 /* RESPONSIVE */
-@media all and (max-width: 800px) {
+@media all and (max-width: 426px) {
     body 
     {
         padding: 1.5em;
         background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
     }
 
-    h1
+    .title h1
     {
         font-size: 3em;
         text-align: center;
@@ -168,7 +194,7 @@ li {margin-right: 0.3em;}
         padding-top: 0.5em;
     }
 
-    main 
+    .bottom-container 
     {
         flex-direction: column;
     }
